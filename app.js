@@ -72,7 +72,7 @@ async function home() {
     </div>
     <div class="stats">
       <div class="stat"><b>${docs ? docs.length : 60}+</b><span>normativ hujjat</span></div>
-      <div class="stat"><b>${PP.length || "—"}</b><span>kanal posti</span></div>
+      ${PP.length ? `<div class="stat"><b>${PP.length}</b><span>kanal posti</span></div>` : `<div class="stat"><b>7</b><span>bo'lim</span></div>`}
       <div class="stat"><b>4</b><span>kalkulyator</span></div>
       <div class="stat"><b>3</b><span>post har kuni</span></div>
     </div>
