@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avtomobil Yo'llari UZ — Normativ kutubxona</title>
+<meta name="description" content="Yo'l muhandislari uchun normativ hujjatlar: ShNQ, qonunlar, nizomlar — rasmiy matnlarga havolalar bilan. @yol_muhandis">
+<meta property="og:title" content="Avtomobil Yo'llari UZ — Normativ kutubxona">
+<meta property="og:description" content="ShNQ va yo'l sohasidagi normativ hujjatlar — rasmiy matnlar bir joyda.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#070f1e;--navy2:#0f2240;--card:#10213c;--line:#26406a;--yel:#ffc400;--txt:#e8eef8;--mut:#9fb2cf}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--navy);color:var(--txt);line-height:1.5;
+ background-image:linear-gradient(var(--navy2) 1px,transparent 1px),linear-gradient(90deg,var(--navy2) 1px,transparent 1px);background-size:48px 48px}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+header{padding:36px 0 18px}
+.tag{display:inline-block;background:var(--yel);color:var(--navy);font-weight:700;font-size:13px;padding:6px 14px;border-radius:30px;letter-spacing:.3px}
+h1{font-size:clamp(32px,6vw,56px);line-height:1.05;margin:18px 0 10px;font-weight:700}
+h1 span{color:var(--yel)}
+.lead{color:var(--mut);max-width:640px}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;font-size:15px;padding:11px 18px;border-radius:12px;border:1px solid var(--line);background:var(--card)}
+.btn.y{background:var(--yel);color:var(--navy);border-color:var(--yel)}
+.tools{position:sticky;top:0;z-index:5;background:rgba(7,15,30,.92);backdrop-filter:blur(6px);padding:14px 0;border-bottom:1px solid var(--line);margin-top:22px}
+#q{width:100%;font:inherit;font-size:16px;padding:13px 16px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--txt);outline:none}
+#q:focus{border-color:var(--yel)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.chip{font:inherit;font-size:13px;font-weight:600;padding:6px 12px;border-radius:20px;border:1px solid var(--line);background:transparent;color:var(--mut);cursor:pointer}
+.chip.on{background:var(--yel);color:var(--navy);border-color:var(--yel)}
+section h2{font-size:20px;margin:28px 0 12px;color:var(--yel)}
+.grid{display:grid;gap:12px}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;scroll-margin-top:140px;transition:border-color .2s}
+.doc:target{border-color:var(--yel);box-shadow:0 0 0 2px rgba(255,196,0,.35)}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;flex-wrap:wrap}
+.code{font-size:22px;font-weight:700}
+.badge{font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;background:#173a2a;color:#7ee2a8;white-space:nowrap}
+.title{font-weight:500;margin:2px 0 8px}
+.meta{font-size:13px;color:var(--mut)}
+.facts{margin:10px 0 4px;padding-left:18px;font-size:14px;color:#cfdaec}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.links a{font-size:14px;font-weight:600;text-decoration:none;padding:8px 13px;border-radius:10px;background:#16305a;border:1px solid var(--line)}
+.links a.main{background:var(--yel);color:var(--navy);border-color:var(--yel)}
+.note{font-size:12px;color:var(--mut);margin-top:8px}
+.empty{color:var(--mut);padding:20px 0;display:none}
+footer{margin:40px 0 30px;padding-top:20px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <span class="tag">AVTOMOBIL YO'LLARI UZ</span>
+  <h1>Normativ <span>kutubxona</span></h1>
+  <p class="lead">Yo'l loyihalash va qurilishida kerak bo'ladigan hujjatlar — rasmiy matnlarga to'g'ridan-to'g'ri havola bilan. Har bir hujjatning amaldagi tahriri va asosiy raqamlari.</p>
+  <div class="cta">
+    <a class="btn y" href="https://t.me/yol_muhandis">📢 Telegram kanal — @yol_muhandis</a>
+    <a class="btn" href="https://t.me/share/url?url=https%3A%2F%2Fumidjonqamarov-wq.github.io%2Fyol-muhandis%2F&text=Yo%27l%20muhandislari%20uchun%20normativ%20kutubxona">📤 Ulashish</a>
+  </div>
+</header>
+
+<div class="tools">
+  <input id="q" type="search" placeholder="Qidirish: ShNQ 2.05.02, ko'prik, laboratoriya..." autocomplete="off">
+  <div class="chips" id="chips"></div>
+</div>
+
+<main id="list"></main>
+<p class="empty" id="empty">Hech narsa topilmadi. Boshqa so'z bilan qidirib ko'ring yoki kanalga yozing.</p>
+
+<footer>
+  Hujjatlar matni rasmiy manbalarda: <a href="https://lex.uz">lex.uz</a> (Adliya vazirligi qonunchilik bazasi) va <a href="https://gov.uz/oz/mc/pages/shaharsozlik-normalari-va-qoidalari">Qurilish va uy-joy kommunal xo'jaligi vazirligi</a>. Qo'llashdan oldin amaldagi tahririni rasmiy manbada tekshiring.<br><br>
+  © Avtomobil Yo'llari UZ · <a href="https://t.me/yol_muhandis">t.me/yol_muhandis</a>
+</footer>
+</div>
+
+<script>
+const DOCS = [
+ {id:"shnq-2-05-02-23", cat:"ShNQ", code:"ShNQ 2.05.02-23", title:"Avtomobil yo'llari. Loyihalash talablari",
+  meta:"Vazir buyrug'i 23.08.2024, 01/2-61-son · lex.uz'da kuchga kirish sanasi 14.10.2024",
+  facts:["Toifalar (avt/sutka): Ia, Ib — 14 000 dan ortiq; II — 6 000–14 000; III — 2 000–6 000; IV — 200–2 000; V — 200 gacha",
+         "Hisobiy tezlik (asosiy relyef): Ia — 150, Ib va II — 120, III — 100, IV — 80, V — 60 km/soat",
+         "Harakat tasmasi: Ia–II — 3,75 m; III — 3,5 m; IV — 3,0 m",
+         "Hisobiy o'q yuki: I–II toifa — 130 kN; III–V — 100 kN"],
+  links:[["Rasmiy matn — lex.uz","https://lex.uz/docs/-7205692",1],["PDF — mc.uz","https://mc.uz/uploads/mcuz_7943453353296.pdf"]]},
+ {id:"shnq-2-05-03-22", cat:"ShNQ", code:"ShNQ 2.05.03-22", title:"Ko'priklar va quvurlar",
+  meta:"Qo'shimchalar: 23.01.2024, 17-son",
+  links:[["PDF — mc.uz","https://mc.uz/uploads/mcuz_4531441987359.pdf",1],["2024 qo'shimchalar — lex.uz","https://lex.uz/docs/6794603"]]},
+ {id:"shnq-3-06-07-23", cat:"ShNQ", code:"ShNQ 3.06.07-23", title:"Ko'priklar va quvurlar. Tekshirish, sinash va diagnostika qilish qoidalari",
+  links:[["PDF — mc.uz","https://mc.uz/uploads/mcuz_91857022384671.pdf",1]]},
+ {id:"shnq-2-05-05-24", cat:"ShNQ", code:"ShNQ 2.05.05-24", title:"Temir yo'l va avtomobil yo'llari tunnellari",
+  links:[["PDF — mc.uz","https://mc.uz/uploads/mcuz_92446032402266.pdf",1]]},
+ {id:"shnq-2-07-06-24", cat:"ShNQ", code:"ShNQ 2.07.06-24", title:"Shahar ko'cha-yo'llari. Loyihalash talablari",
+  meta:"Tasdiqlash buyrug'i: 25.06.2024, 01/2-23-son",
+  links:[["Rasmiy matn — lex.uz","https://lex.uz/docs/7039154",1],["PDF — mc.uz","https://mc.uz/uploads/mcuz_358275941550.pdf"]]},
+ {id:"shnq-4-02-27-05", cat:"ShNQ", code:"ShNQ 4.02.27-05", title:"Avtomobil yo'llari — smeta normalari",
+  links:[["PDF — mc.uz","https://mc.uz/uploads/mcuz_48925257294765.pdf",1]]},
+ {id:"qonun-ork-117", cat:"Qonun", code:"O'RQ-117", title:"Avtomobil yo'llari to'g'risida (Qonun)",
+  meta:"02.10.2007",
+  links:[["Rasmiy matn — lex.uz","https://lex.uz/docs/1254490",1]]},
+ {id:"vmq-901-2024", cat:"Qaror va nizom", code:"VMQ 901-son", title:"Avtomobil yo'llarini qurish, rekonstruksiya qilish, ta'mirlash va ulardan foydalanish ishlarini tashkil etish chora-tadbirlari",
+  meta:"30.12.2024",
+  links:[["Rasmiy matn — lex.uz","https://lex.uz/docs/7309816",1]]},
+ {id:"nizom-3904-2026", cat:"Qaror va nizom", code:"3904-son nizom", title:"Avtomobil yo'llarini qurish, rekonstruksiya qilish va ta'mirlashda laboratoriya sinovlarini amalga oshirish to'g'risidagi nizom",
+  meta:"18.07.2026",
+  links:[["Rasmiy matn — lex.uz","https://lex.uz/docs/-8340873",1]]},
+];
+const CATS=["Hammasi",...new Set(DOCS.map(d=>d.cat))];
+let cat="Hammasi";
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function card(d){
+  const facts=d.facts?`<ul class="facts">${d.facts.map(f=>`<li>${esc(f)}</li>`).join("")}</ul>`:"";
+  const mc=d.links.some(l=>l[1].includes("mc.uz"));
+  return `<article class="doc" id="${d.id}">
+   <div class="top"><div class="code">${esc(d.code)}</div><span class="badge">${esc(d.cat)}</span></div>
+   <div class="title">${esc(d.title)}</div>
+   ${d.meta?`<div class="meta">${esc(d.meta)}</div>`:""}${facts}
+   <div class="links">${d.links.map(l=>`<a class="${l[2]?"main":""}" href="${l[1]}" target="_blank" rel="noopener">${esc(l[0])} ↗</a>`).join("")}
+   <a href="#${d.id}" onclick="copyLink(event,'${d.id}')">🔗 Havola</a></div>
+   ${mc?`<p class="note">mc.uz saytida sertifikat xatosi bo'lishi mumkin — brauzer ogohlantirsa, «Davom etish» ni tanlang.</p>`:""}
+  </article>`;
+}
+function render(){
+  const q=document.getElementById("q").value.trim().toLowerCase();
+  const items=DOCS.filter(d=>(cat==="Hammasi"||d.cat===cat)&&(!q||(d.code+" "+d.title+" "+(d.meta||"")+" "+(d.facts||[]).join(" ")).toLowerCase().includes(q)));
+  const groups=[...new Set(items.map(d=>d.cat))];
+  document.getElementById("list").innerHTML=groups.map(g=>`<section><h2>${esc(g)}</h2><div class="grid">${items.filter(d=>d.cat===g).map(card).join("")}</div></section>`).join("");
+  document.getElementById("empty").style.display=items.length?"none":"block";
+  document.getElementById("chips").innerHTML=CATS.map(c=>`<button class="chip ${c===cat?"on":""}" onclick="cat='${c}';render()">${esc(c)}</button>`).join("");
+}
+function copyLink(e,id){
+  e.preventDefault();
+  const u=location.origin+location.pathname+"#"+id;
+  history.replaceState(null,"","#"+id);
+  try{navigator.clipboard.writeText(u);e.target.textContent="✓ Nusxalandi";setTimeout(()=>e.target.textContent="🔗 Havola",1500)}catch(_){}
+}
+document.getElementById("q").addEventListener("input",render);
+render();
+if(location.hash){const el=document.querySelector(location.hash);if(el)setTimeout(()=>el.scrollIntoView({behavior:"smooth"}),100)}
+</script>
+</body>
+</html>
