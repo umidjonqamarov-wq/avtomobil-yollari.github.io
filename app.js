@@ -8,6 +8,21 @@ async function load(n) {
   return D[n];
 }
 
+
+/* ---------- Yangi o'zbek lotin alifbosi (O'RQ-1184, 2026): oʻ→ö, gʻ→ğ, sh→ş, ch→ç, '→ʼ ---------- */
+const AP = "['‘’ʻ`]";
+const RULES = [[new RegExp("O" + AP, "g"), "Ö"], [new RegExp("o" + AP, "g"), "ö"], [new RegExp("G" + AP, "g"), "Ğ"], [new RegExp("g" + AP, "g"), "ğ"],
+  [/S[Hh]/g, "Ş"], [/sh/g, "ş"], [/C[Hh]/g, "Ç"], [/ch/g, "ç"], [new RegExp("(?<=[A-Za-zÖöĞğŞşÇç])" + AP + "(?=[A-Za-zÖöĞğŞşÇç])", "g"), "ʼ"]];
+const SKIP = /(https?:\/\/\S+|t\.me\/\S+|@\w+|#\w+|[\w.-]+\.(?:uz|io|com|org|ru)\S*)/;
+const yangi = t => t ? t.split(SKIP).map((p, i) => i % 2 ? p : RULES.reduce((a, [rx, r]) => a.replace(rx, r), p)).join("") : t;
+const fold = t => String(t || "").toLowerCase().replace(/ö/g, "o").replace(/ğ/g, "g").replace(/ş/g, "sh").replace(/ç/g, "ch").replace(/['‘’ʻʼ`]/g, "");
+function convertDom(root = document.body) {
+  const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, { acceptNode: n => n.parentElement && /SCRIPT|STYLE/.test(n.parentElement.tagName) ? 2 : 1 });
+  let n; while ((n = w.nextNode())) { const v = yangi(n.nodeValue); if (v !== n.nodeValue) n.nodeValue = v; }
+  root.querySelectorAll && root.querySelectorAll("[placeholder],[title],[aria-label]").forEach(e => ["placeholder", "title", "aria-label"].forEach(a => e.hasAttribute(a) && e.setAttribute(a, yangi(e.getAttribute(a)))));
+}
+new MutationObserver(ms => ms.forEach(m => m.addedNodes.forEach(x => x.nodeType === 1 ? convertDom(x) : x.nodeType === 3 && (x.nodeValue = yangi(x.nodeValue))))).observe(document.body, { childList: true, subtree: true });
+
 /* ---------- Ikonkalar (Lucide uslubida, chiziqli SVG) ---------- */
 const P = {
   send: '<path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>',
@@ -139,7 +154,7 @@ async function postsPage() {
   const data = await load("posts"); const PP = ((data && data.posts) || []).filter(p => p.text || p.photo);
   setTimeout(() => {
     const q = $("#pq"); if (!q) return;
-    q.oninput = () => { const s = q.value.toLowerCase().trim(); const f = PP.filter(p => !s || (p.text || "").toLowerCase().includes(s));
+    q.oninput = () => { const s = q.value.toLowerCase().trim(); const f = PP.filter(p => !s || fold(p.text).includes(fold(s)));
       $("#pl").innerHTML = f.length ? f.map(postCard).join("") : `<p class="empty">Hech narsa topilmadi.</p>`; };
     q.oninput();
   });
@@ -169,7 +184,7 @@ async function libPage(sel) {
   let cat = "Hammasi";
   setTimeout(() => {
     const draw = () => { const s = $("#lq").value.toLowerCase().trim();
-      const f = docs.filter(d => (cat === "Hammasi" || d.cat === cat) && (!s || [d.code, d.title, d.meta, ...(d.facts || [])].join(" ").toLowerCase().includes(s)));
+      const f = docs.filter(d => (cat === "Hammasi" || d.cat === cat) && (!s || fold([d.code, d.title, d.meta, ...(d.facts || [])].join(" ")).includes(fold(s))));
       $("#ll").innerHTML = f.length ? f.map(docCard).join("") : `<p class="empty">Hech narsa topilmadi.</p>`;
       document.querySelectorAll("#lc .chip").forEach(c => c.classList.toggle("on", c.dataset.c === cat));
       if (sel) { const el = document.getElementById(sel); if (el) { el.classList.add("hl"); setTimeout(() => el.scrollIntoView({ behavior: "smooth", block: "center" }), 60); } sel = null; } };
@@ -233,7 +248,7 @@ async function quizPage() {
 async function glossPage() {
   const G = (await load("glossary")) || [];
   setTimeout(() => { const q = $("#gq"); const draw = () => { const s = q.value.toLowerCase();
-    $("#gl").innerHTML = G.filter(g => !s || (g.term + g.text).toLowerCase().includes(s)).map(g => `<div><dt>${esc(g.term)}</dt><dd>${esc(g.text)}</dd></div>`).join(""); };
+    $("#gl").innerHTML = G.filter(g => !s || fold(g.term + g.text).includes(fold(s))).map(g => `<div><dt>${esc(g.term)}</dt><dd>${esc(g.text)}</dd></div>`).join(""); };
     q.oninput = draw; draw(); });
   return pageHead("Atamalar", "Lug'at", "Yo'l loyihalash va qurilishida ishlatiladigan asosiy atamalar — qisqa va sodda.", IMG.gloss) +
     `<div class="wrap"><div class="tools"><div class="search">${I("search")}<input class="inp" id="gq" placeholder="Atamani qidirish..."></div></div><dl class="gl" id="gl" style="margin-top:16px"></dl></div>`;
@@ -264,9 +279,9 @@ async function route() {
   document.querySelectorAll(".menu a").forEach(a => a.classList.toggle("on", a.dataset.r === (ROUTES[r] ? r : "")));
   $("#menu").classList.remove("open");
   if (!sub) window.scrollTo(0, 0);
-  document.title = (TITLES[r] ? TITLES[r] + " — " : "") + "Avtomobil Yo'llari UZ";
+  document.title = yangi((TITLES[r] ? TITLES[r] + " — " : "") + "Avtomobil Yo'llari UZ");
 }
 const navSolid = () => $("#nav").classList.toggle("solid", scrollY > 30);
 addEventListener("scroll", navSolid, { passive: true });
 addEventListener("hashchange", route);
-hydrateIcons(); navSolid(); route();
+hydrateIcons(); convertDom(); navSolid(); route();
