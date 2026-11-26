@@ -1,0 +1,74 @@
+[
+ {
+  "term": "Yo'l poyi",
+  "text": "Yo'l konstruksiyasi turadigan grunt inshoot: ko'tarma yoki o'yma. Yo'l to'shamasining asosi."
+ },
+ {
+  "term": "Yo'l to'shamasi",
+  "text": "Yo'l poyi ustidagi ko'p qatlamli konstruksiya: qoplama, asos va qo'shimcha qatlamlar. Transport yukini qabul qilib, poyga tarqatadi."
+ },
+ {
+  "term": "Qoplama",
+  "text": "Yo'l to'shamasining eng ustki qatlami — g'ildirak bevosita tegadigan qism (asfaltbeton, sement-beton)."
+ },
+ {
+  "term": "Asfaltbeton",
+  "text": "Chaqiq tosh, qum, mineral kukun va bitumdan issiq holda tayyorlangan, zichlangan aralashma."
+ },
+ {
+  "term": "Bitum",
+  "text": "Neftdan olinadigan qora yopishqoq bog'lovchi. Asfaltbetonda mineral donalarni bir-biriga bog'laydi."
+ },
+ {
+  "term": "Hisobiy tezlik",
+  "text": "Yo'l elementlari (radius, ko'rinish masofasi, qiyalik) loyihalanadigan eng katta xavfsiz tezlik. Toifaga bog'liq."
+ },
+ {
+  "term": "Harakat jadalligi",
+  "text": "Yo'lning ma'lum kesimidan vaqt birligida (odatda sutkada) o'tadigan transport vositalari soni."
+ },
+ {
+  "term": "Yo'l toifasi",
+  "text": "Yo'lning ahamiyati va harakat jadalligiga qarab belgilanadigan sinfi (Ia, Ib, II–V). Barcha geometrik talablar shunga bog'liq."
+ },
+ {
+  "term": "Zichlash koeffitsienti (Ky)",
+  "text": "Gruntning joydagi quruq zichligining laboratoriyada standart zichlashda olingan eng katta zichlikka nisbati."
+ },
+ {
+  "term": "Optimal namlik",
+  "text": "Grunt eng yuqori zichlikka erishadigan namlik. Quruq ham, juda ho'l ham grunt yaxshi zichlanmaydi."
+ },
+ {
+  "term": "Bo'ylama qiyalik",
+  "text": "Yo'l o'qi bo'ylab balandlik o'zgarishi, odatda promille (‰) yoki foizda o'lchanadi."
+ },
+ {
+  "term": "Ko'ndalang qiyalik",
+  "text": "Qatnov qismining yon tomonga qiyaligi — suvni yo'ldan chiqarib yuborish uchun."
+ },
+ {
+  "term": "Virajh",
+  "text": "Burilishda qatnov qismini bir tomonga qiyalatish — markazdan qochma kuchni kamaytirish uchun."
+ },
+ {
+  "term": "Ko'tarma",
+  "text": "Yo'l poyining tabiiy yer sathidan yuqorida qurilgan qismi."
+ },
+ {
+  "term": "O'yma",
+  "text": "Yo'l poyining yer sathidan pastda, gruntni qazib qurilgan qismi."
+ },
+ {
+  "term": "Geosetka",
+  "text": "Asfalt yoki asos qatlamlarini mustahkamlash uchun qo'yiladigan polimer yoki shisha tolali to'r."
+ },
+ {
+  "term": "Piketaj",
+  "text": "Yo'l o'qi bo'ylab masofani belgilash tizimi: 1 piket = 100 m (PK 12+50 — boshidan 1250 m)."
+ },
+ {
+  "term": "Nivelirlash",
+  "text": "Nuqtalar orasidagi balandlik farqini nivelir asbobi bilan aniqlash."
+ }
+]

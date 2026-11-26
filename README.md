@@ -1,6 +1,6 @@
-# Avtomobil Yo'llari UZ — normativ kutubxona
+# Avtomobil Yo'llari UZ — sayt
 
-Sayt: https://umidjonqamarov-wq.github.io/yol-muhandis/
-Kanal: https://t.me/yol_muhandis
+Yo'l muhandislari portali: yangiliklar, kanal postlari, normativ kutubxona, kalkulyatorlar, testlar, lug'at.
 
-Hujjat qo'shish: index.html dagi DOCS ro'yxatiga yangi element qo'shing.
+- Kanal: https://t.me/yol_muhandis
+- Ma'lumotlar: `data/*.json` (docs, news, glossary, quiz). Postlar `scripts/scrape.py` bilan har 2 soatda avtomatik yangilanadi.

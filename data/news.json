@@ -1,0 +1,54 @@
+[
+ {
+  "date": "2026-07-18",
+  "tag": "Normativ",
+  "title": "Yo'l qurilishida laboratoriya sinovlari bo'yicha nizom tasdiqlandi",
+  "text": "Avtomobil yo'llarini qurish, rekonstruksiya qilish va ta'mirlashda laboratoriya sinovlarini amalga oshirish tartibi alohida nizom bilan belgilandi (3904-son). Laboratoriya va texnik nazorat mutaxassislari uchun asosiy hujjat.",
+  "src": [
+   "lex.uz",
+   "https://lex.uz/docs/-8340873"
+  ],
+  "lib": "nizom-3904-2026"
+ },
+ {
+  "date": "2025-09-28",
+  "tag": "Dunyo",
+  "title": "Huajiang Grand Canyon ko'prigi ochildi — daryodan 625 m balandda",
+  "text": "Xitoyning Guychjou provinsiyasidagi ko'prik daryo sathidan 625 m balandlikda o'tadi va dunyodagi eng baland ko'prik hisoblanadi. Kanyonning ikki tomoni orasidagi yo'l soatlardan daqiqalarga qisqardi.",
+  "src": null,
+  "lib": null
+ },
+ {
+  "date": "2024-12-30",
+  "tag": "Qaror",
+  "title": "Yo'l ishlarini tashkil etish bo'yicha VM qarori (901-son)",
+  "text": "Avtomobil yo'llarini qurish, rekonstruksiya qilish, ta'mirlash va ulardan foydalanish ishlarini tashkil etish chora-tadbirlari belgilandi.",
+  "src": [
+   "lex.uz",
+   "https://lex.uz/docs/7309816"
+  ],
+  "lib": "vmq-901-2024"
+ },
+ {
+  "date": "2024-10-14",
+  "tag": "Normativ",
+  "title": "ShNQ 2.05.02-23 «Avtomobil yo'llari. Loyihalash talablari» kuchga kirdi",
+  "text": "Yo'l loyihalashning asosiy hujjati: toifalar, hisobiy tezliklar, ko'ndalang kesim, yo'l poyi va to'shamalari. Vazirning 23.08.2024 dagi 01/2-61-son buyrug'i bilan tasdiqlangan.",
+  "src": [
+   "lex.uz",
+   "https://lex.uz/docs/-7205692"
+  ],
+  "lib": "shnq-2-05-02-23"
+ },
+ {
+  "date": "2024-01-23",
+  "tag": "Normativ",
+  "title": "ShNQ 2.05.03-22 «Ko'priklar va quvurlar» ga qo'shimchalar kiritildi",
+  "text": "Ko'priklar va quvurlarni loyihalash normasiga qo'shimchalar (17-son).",
+  "src": [
+   "lex.uz",
+   "https://lex.uz/docs/6794603"
+  ],
+  "lib": "shnq-2-05-03-22"
+ }
+]

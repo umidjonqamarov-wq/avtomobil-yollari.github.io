@@ -1,0 +1,147 @@
+[
+ {
+  "id": "shnq-2-05-02-23",
+  "cat": "ShNQ",
+  "code": "ShNQ 2.05.02-23",
+  "title": "Avtomobil yo'llari. Loyihalash talablari",
+  "meta": "Vazir buyrug'i 23.08.2024, 01/2-61-son · lex.uz'da kuchga kirish sanasi 14.10.2024",
+  "facts": [
+   "Toifalar (avt/sutka): Ia, Ib — 14 000 dan ortiq; II — 6 000–14 000; III — 2 000–6 000; IV — 200–2 000; V — 200 gacha",
+   "Hisobiy tezlik (asosiy relyef): Ia — 150, Ib va II — 120, III — 100, IV — 80, V — 60 km/soat",
+   "Harakat tasmasi: Ia–II — 3,75 m; III — 3,5 m; IV — 3,0 m; V — 1 tasma 4,5 m",
+   "Hisobiy o'q yuki: I–II toifa — 130 kN; III–V — 100 kN",
+   "12 bob: yo'l poyi, yo'l to'shamalari, kesishmalar, ko'priklar va quvurlar, harakat xavfsizligi va boshq."
+  ],
+  "links": [
+   [
+    "Rasmiy matn — lex.uz",
+    "https://lex.uz/docs/-7205692",
+    1
+   ],
+   [
+    "PDF — mc.uz",
+    "https://mc.uz/uploads/mcuz_7943453353296.pdf",
+    0
+   ]
+  ]
+ },
+ {
+  "id": "shnq-2-05-03-22",
+  "cat": "ShNQ",
+  "code": "ShNQ 2.05.03-22",
+  "title": "Ko'priklar va quvurlar",
+  "meta": "Qo'shimchalar: 23.01.2024, 17-son",
+  "links": [
+   [
+    "PDF — mc.uz",
+    "https://mc.uz/uploads/mcuz_4531441987359.pdf",
+    1
+   ],
+   [
+    "2024 qo'shimchalar — lex.uz",
+    "https://lex.uz/docs/6794603",
+    0
+   ]
+  ]
+ },
+ {
+  "id": "shnq-3-06-07-23",
+  "cat": "ShNQ",
+  "code": "ShNQ 3.06.07-23",
+  "title": "Ko'priklar va quvurlar. Tekshirish, sinash va diagnostika qilish qoidalari",
+  "links": [
+   [
+    "PDF — mc.uz",
+    "https://mc.uz/uploads/mcuz_91857022384671.pdf",
+    1
+   ]
+  ]
+ },
+ {
+  "id": "shnq-2-05-05-24",
+  "cat": "ShNQ",
+  "code": "ShNQ 2.05.05-24",
+  "title": "Temir yo'l va avtomobil yo'llari tunnellari",
+  "links": [
+   [
+    "PDF — mc.uz",
+    "https://mc.uz/uploads/mcuz_92446032402266.pdf",
+    1
+   ]
+  ]
+ },
+ {
+  "id": "shnq-2-07-06-24",
+  "cat": "ShNQ",
+  "code": "ShNQ 2.07.06-24",
+  "title": "Shahar ko'cha-yo'llari. Loyihalash talablari",
+  "meta": "Tasdiqlash buyrug'i: 25.06.2024, 01/2-23-son",
+  "links": [
+   [
+    "Rasmiy matn — lex.uz",
+    "https://lex.uz/docs/7039154",
+    1
+   ],
+   [
+    "PDF — mc.uz",
+    "https://mc.uz/uploads/mcuz_358275941550.pdf",
+    0
+   ]
+  ]
+ },
+ {
+  "id": "shnq-4-02-27-05",
+  "cat": "ShNQ",
+  "code": "ShNQ 4.02.27-05",
+  "title": "Avtomobil yo'llari — resurs smeta normalari",
+  "links": [
+   [
+    "PDF — mc.uz",
+    "https://mc.uz/uploads/mcuz_48925257294765.pdf",
+    1
+   ]
+  ]
+ },
+ {
+  "id": "qonun-ork-117",
+  "cat": "Qonun",
+  "code": "O'RQ-117",
+  "title": "Avtomobil yo'llari to'g'risida",
+  "meta": "02.10.2007",
+  "links": [
+   [
+    "Rasmiy matn — lex.uz",
+    "https://lex.uz/docs/1254490",
+    1
+   ]
+  ]
+ },
+ {
+  "id": "vmq-901-2024",
+  "cat": "Qaror va nizom",
+  "code": "VMQ 901-son",
+  "title": "Avtomobil yo'llarini qurish, rekonstruksiya qilish, ta'mirlash va ulardan foydalanish ishlarini tashkil etish chora-tadbirlari",
+  "meta": "30.12.2024",
+  "links": [
+   [
+    "Rasmiy matn — lex.uz",
+    "https://lex.uz/docs/7309816",
+    1
+   ]
+  ]
+ },
+ {
+  "id": "nizom-3904-2026",
+  "cat": "Qaror va nizom",
+  "code": "3904-son",
+  "title": "Avtomobil yo'llarini qurish, rekonstruksiya qilish va ta'mirlashda laboratoriya sinovlarini amalga oshirish to'g'risidagi nizom",
+  "meta": "18.07.2026",
+  "links": [
+   [
+    "Rasmiy matn — lex.uz",
+    "https://lex.uz/docs/-8340873",
+    1
+   ]
+  ]
+ }
+]

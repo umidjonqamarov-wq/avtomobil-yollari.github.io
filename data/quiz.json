@@ -1,0 +1,90 @@
+[
+ {
+  "q": "ShNQ 2.05.02-23 bo'yicha sutkalik jadalligi 4 000 avt/sut bo'lgan yo'l qaysi toifaga kiradi?",
+  "o": [
+   "II",
+   "III",
+   "IV",
+   "V"
+  ],
+  "c": 1,
+  "e": "III toifa — 2 000–6 000 avt/sut."
+ },
+ {
+  "q": "Ia toifali yo'lning asosiy relyefdagi hisobiy tezligi qancha?",
+  "o": [
+   "100 km/soat",
+   "120 km/soat",
+   "150 km/soat",
+   "130 km/soat"
+  ],
+  "c": 2,
+  "e": "Ia (avtomagistral) — 150 km/soat."
+ },
+ {
+  "q": "III toifali yo'lda harakat tasmasining kengligi qancha?",
+  "o": [
+   "3,0 m",
+   "3,5 m",
+   "3,75 m",
+   "4,5 m"
+  ],
+  "c": 1,
+  "e": "III toifa — 3,5 m."
+ },
+ {
+  "q": "I–II toifali yo'llar uchun hisobiy o'q yuki qancha?",
+  "o": [
+   "100 kN",
+   "115 kN",
+   "130 kN",
+   "150 kN"
+  ],
+  "c": 2,
+  "e": "I–II toifa — 130 kN; III–V — 100 kN."
+ },
+ {
+  "q": "V toifali yo'lda nechta harakat tasmasi bo'ladi?",
+  "o": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "c": 0,
+  "e": "V toifa — 1 tasma, kengligi 4,5 m."
+ },
+ {
+  "q": "1 piket necha metrga teng?",
+  "o": [
+   "10 m",
+   "50 m",
+   "100 m",
+   "1000 m"
+  ],
+  "c": 2,
+  "e": "1 piket = 100 m."
+ },
+ {
+  "q": "Asfalt qatlamini zichlash qaysi haroratdan pastda deyarli samarasiz bo'ladi?",
+  "o": [
+   "≈ 140°C",
+   "≈ 120°C",
+   "≈ 80°C",
+   "≈ 40°C"
+  ],
+  "c": 2,
+  "e": "Taxminan 80°C da bitum qotadi va katok endi zichlay olmaydi."
+ },
+ {
+  "q": "Zichlash koeffitsienti (Ky) qanday aniqlanadi?",
+  "o": [
+   "Namlik ÷ zichlik",
+   "Joydagi quruq zichlik ÷ maksimal standart zichlik",
+   "Massa ÷ hajm",
+   "Qatlam qalinligi ÷ katok o'tishlari"
+  ],
+  "c": 1,
+  "e": "Ky = joydagi quruq zichlik / laboratoriyadagi maksimal zichlik."
+ }
+]
